@@ -18,5 +18,6 @@ docker run -d --name minecraft \
 -e MC_PVP="<true|false>" \
 -e MC_MAX_PLAYERS="<Num of Players>" \
 -v minecraft:/home/LinuxGSM/serverfiles \
+-p 25565:25565 \
 jmarques15/minecraft
 ```
