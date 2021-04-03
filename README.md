@@ -6,7 +6,6 @@ The entrypoint.sh script takes care of reading environment variables for easier 
 ## Starting the server
 Configure environment variables as necessary.
 
-Simple single shard (no caves)
 ```bash
 docker run -d --name minecraft \
 -e MC_RAM="<Value in MB>" \
