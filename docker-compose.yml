@@ -1,8 +1,15 @@
 version: '3.4'
 
 services:
-  private:
-    image: private
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  minecraft:
+    container_name: minecraft
+    image: jmarques15/minecraft
+    env_file:
+      - server.env
+    hostname: minecraft
+    volumes:
+      - minecraft:/home/LinuxGSM/serverfiles
+    stop_grace_period: 1m30s
+
+volumes:
+  minecraft:
