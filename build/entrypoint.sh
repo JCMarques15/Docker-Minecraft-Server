@@ -87,6 +87,9 @@ configure_server () {
 
     # Enable Whitelisting
     sed -i "s/white-list=.*/white-list=true/" serverfiles/server.properties
+
+    # Change Operator Default Level
+    sed -i "s/op-permission-level=.*/op-permission-level=3/" serverfiles/server.properties
 }
 
 # Trap the SIGTERM signal
